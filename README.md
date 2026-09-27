@@ -6,6 +6,10 @@ A cost-aware CLI chat tool that automatically routes prompts to the right LLM mo
 
 `openbase-chat` is a TypeScript CLI tool that demonstrates Openbase's unified model gateway. It takes a prompt, classifies its complexity, routes it to an appropriate LLM (cheap model for simple queries, powerful model for complex ones), and displays the response with full metadata — model used, tokens consumed, latency, and estimated cost.
 
+## Tutorial
+
+Want to understand how this works under the hood? Read the [from-scratch tutorial](docs/tutorial.md) that walks through building this tool step by step.
+
 ## Why Openbase
 
 Openbase acts as a drop-in replacement for direct provider APIs. Instead of managing separate API keys for OpenAI, Anthropic, Google, and others, you use a single Openbase key. You get one bill, automatic failover, and per-request observability — all through an OpenAI-compatible API.
