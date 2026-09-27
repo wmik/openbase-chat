@@ -1,0 +1,26 @@
+{
+  "name": "openbase-chat",
+  "version": "1.0.0",
+  "description": "Cost-aware CLI chat tool with automatic model routing via Openbase",
+  "bin": {
+    "openbase-chat": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsup src/index.ts --format cjs --dts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.x",
+    "commander": "^12.x",
+    "dotenv": "^16.x",
+    "openai": "^4.x",
+    "ora": "^8.x"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsup": "^8.x",
+    "tsx": "^4.x",
+    "typescript": "^5.x"
+  }
+}
